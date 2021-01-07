@@ -35,14 +35,20 @@ public class Sample2 {
 		
 		// StringTokenizer
 		// 		- 문자열을 구분문자열로 분리하는 기능을 가진 클래스
+		//		- 파일입출력에서 형식화된 파일(CSV 파일)을 StringTokenizer 활용하여 데이터 분리/추출 작업
 		StringTokenizer st = new StringTokenizer("My StringBuilder First Builder new String", " ");
 		while(st.hasMoreTokens()) {
 			System.out.println("st.nextToken() -> " + st.nextToken());
 		}
 		
-		st = new StringTokenizer("2021-01-07", "-");
+		st = new StringTokenizer("My StringBuilder First Builder new String");
 		while(st.hasMoreTokens()) {
-			System.out.println("st.nextToken() -> " + st.nextToken());
+			System.out.println("st.nextToken() -> " + st.nextToken(" "));
+		}
+		
+		st = new StringTokenizer("2021-01-07");
+		while(st.hasMoreTokens()) {
+			System.out.println("st.nextToken() -> " + st.nextToken("-"));
 		}
 	}
 
