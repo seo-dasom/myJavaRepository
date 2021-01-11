@@ -12,16 +12,17 @@ import java.io.*;
  *  	- 데이터 확인(Check)를 통해서 사용할 수 없는 형식의 데이터가 생성된 경우
  *  	  강제로 예외를 발생 시켜서 올바른 데이터가 입력 될 수 있게 만든다.
  */
-
 class SamClass {
 	public int divion(int x, int y) throws IOException {
 		return x / y;
+		
 	}
 }
 
 public class Sample1 {
 
 	public static void main(String[] args) throws IOException {
+		
 		SamClass sa = new SamClass();
 		int res = 0;
 		res = sa.divion(10, 1);
