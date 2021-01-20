@@ -27,7 +27,7 @@ public class Sample5 {
 		// 직렬화
 		// 프로그램 안에서 사용하는 데이터를 다른 포멧 형식으로 변환하는 과정
 		try {
-			File f = new File("C:/member.txt");
+			File f = new File("C:/Users/projava/member.txt");
 			FileOutputStream fos = new FileOutputStream(f);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			
@@ -52,7 +52,7 @@ public class Sample5 {
 		
 		// 역직렬화
 		try {
-			File f = new File("C:/member.txt");
+			File f = new File("C:/Users/projava/member.txt");
 			FileInputStream fis = new FileInputStream(f);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			

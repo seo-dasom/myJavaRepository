@@ -56,10 +56,11 @@ public class Sample3 {
 		
 		System.out.println("빈 컬렉션인가 -> " + lst.isEmpty());
 		
-		// 데이터 삭제
+		// 데이터 삭제(인덱스 번호에 해당하는 객체 삭제)
 		//lst.remove(0);		lst.remove(1);		lst.remove(2);
 		//System.out.println(lst);
 		
+		// 데이터 삭제(제공하는 객체와 동일한 객체)
 		//lst.remove(new Integer(15));
 		//System.out.println(lst);
 		

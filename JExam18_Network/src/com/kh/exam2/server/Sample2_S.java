@@ -11,12 +11,14 @@ public class Sample2_S {
 			char[] buffer = new char[512];
 			
 			// 서버 소켓 생성 -> 포트 바인딩 -> TCP LISTEN 상태
+			// 네트워크 통신
+			//		IP 주소, Port 번호(0 ~ 65535)
 			ServerSocket sSocket = new ServerSocket(51000);
 			
 			// 클라이언트의 접속 요청이 올 때 까지 대기
 			// 접속 요청이 오면 승인하고 새로운 소켓을 생성
 			Socket sock = sSocket.accept();
-			System.out.println("접속 클라이언트 정보 : " + sock.getInetAddress() + ":" + sock.getPort());
+			
 			
 			// 통신용 입출력 스트림 생성
 			BufferedReader sockIn = new BufferedReader(new InputStreamReader(sock.getInputStream()));
