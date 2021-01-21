@@ -178,6 +178,7 @@ class EventWindow3 {
 	}
 }
 
+// 독립적인 클래스로 생성 및 처리
 class BtnClickAdapter extends MouseAdapter {
 	private JLabel lbl_print;
 	
